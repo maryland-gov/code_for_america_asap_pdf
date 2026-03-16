@@ -1,6 +1,6 @@
 awslambdaric==3.0.2
 backports.tarfile==1.2.0
-black==25.1.0
+black==26.3.1
 boto3==1.37.10
 document-inference==0.0.0
 flake8==7.1.2
@@ -11,7 +11,7 @@ jaraco-functools==4.3.0
 jaraco.collections==5.1.0
 llm-anthropic==0.18
 llm-gemini==0.25
-pillow==11.3.0
+pillow==12.1.1
 pip-chill==1.0.3
 pymupdf==1.25.5
 requests==2.32.5

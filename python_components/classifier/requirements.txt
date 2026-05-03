@@ -5,7 +5,7 @@ jaraco.collections==5.1.0
 pandas==2.2.3
 pip-chill==1.0.3
 platformdirs==4.2.2
-pytest==8.3.5
+pytest==9.0.3
 scikit-learn==1.6.1
 tomli==2.0.1
 xgboost==2.1.4

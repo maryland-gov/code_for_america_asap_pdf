@@ -40,7 +40,7 @@ data "aws_ecr_lifecycle_policy_document" "thirty_day_expiration_policy" {
 resource "aws_ecr_repository" "document_inference" {
   name                 = "${var.project_name}-lambda-document-inference-${var.environment}"
   force_delete         = true
-  image_tag_mutability = "MUTABLE"
+  image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
     scan_on_push = true
@@ -68,7 +68,7 @@ resource "aws_ecr_lifecycle_policy" "document_inference" {
 resource "aws_ecr_repository" "evaluation" {
   name                 = "${var.project_name}-evaluation-${var.environment}"
   force_delete         = true
-  image_tag_mutability = "MUTABLE"
+  image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
     scan_on_push = true
@@ -96,7 +96,7 @@ resource "aws_ecr_lifecycle_policy" "evaluation" {
 resource "aws_ecr_repository" "document_inference_evaluation" {
   name                 = "${var.project_name}-document-inference-evaluation-${var.environment}"
   force_delete         = true
-  image_tag_mutability = "MUTABLE"
+  image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
     scan_on_push = true

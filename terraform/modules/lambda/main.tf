@@ -179,7 +179,7 @@ resource "aws_iam_role_policy" "lambda_s3" {
 
 resource "aws_cloudwatch_log_group" "document_inference" {
   name              = "/lambda/${var.project_name}-document-inference-${var.environment}"
-  retention_in_days = 30
+  retention_in_days = 0
 
   tags = {
     Name = "${var.project_name}-${var.environment}-log-group"
